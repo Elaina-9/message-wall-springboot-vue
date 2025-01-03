@@ -129,11 +129,11 @@ npm run build
 
 后端使用
 ```bash
-maven package
+mvn package
 ```
 打包成jar,上传到服务器运行即可
 
 一个问题是要处理跨域，这需要修改backend配置
 浏览器只允许网页访问与自己同源的资源(addr:port一致)
 
-例如你的前端在http://yourip:8888,现请求后端http://yourip:9999,由于开始时浏览器显示的网页是http://yourip:8888,即你的ORIGIN字段是yourip:8888,只有在后端设置允许源为yourip:8888的域访问后端(port:9999)，才能正常访问
+例如你的前端在 http://yourip:8888 ,现请求后端 http://yourip:9999 ,由于开始时浏览器显示的网页是 http://yourip:8888 ,即你的ORIGIN字段是yourip:8888,只有在后端设置允许源为yourip:8888的域访问后端(port:9999)，才能正常访问
