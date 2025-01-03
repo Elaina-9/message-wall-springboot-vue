@@ -28,6 +28,7 @@ import com.lantu.sys.entity.Avatar;
 public class AvatarController {
 
     // 文件保存路径
+    //此处为Windows绝对路径，部署到Linux时需要修改
     private static final String UPLOAD_PATH = "D:\\message-wall-springboot+vue\\frontend\\public\\avatars\\";
 
     @Autowired
